@@ -11,8 +11,8 @@ class App extends Component {
 
     render() {
         return [
-            <h1>Hello World!</h1>,
-            <button type="button" onClick={() => this.setState({ count: this.state.count + 1 })}>I've been clicked {this.state.count} times</button>
+            <h1 key="root1">Hello World!</h1>,
+            <button key="root2" type="button" onClick={() => this.setState({ count: this.state.count + 1 })}>I've been clicked {this.state.count} times</button>
         ];
     }
 }
